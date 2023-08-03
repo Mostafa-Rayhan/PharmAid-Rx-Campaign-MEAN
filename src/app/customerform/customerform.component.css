@@ -1,0 +1,26 @@
+
+.sectionBg {
+    background-color: #f5f2ee;
+}
+
+.btnn {
+    background-color: #0C8281;
+    color: #FFFFFF;
+    line-height: 20px;
+    font-family: 'Amazon Ember', sans-serif;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 30px;
+}
+
+.btnnReset {
+    background-color: #5f5f5d;
+    color: #FFFFFF;
+    line-height: 20px;
+    font-family: 'Amazon Ember', sans-serif;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 30px;
+}
