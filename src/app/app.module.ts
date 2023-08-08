@@ -15,13 +15,27 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
 import { HeaderComponent } from './header/header.component';
 import { CustomerformComponent } from './customerform/customerform.component';
+import { CustomerinfoComponent } from './customerinfo/customerinfo.component';
+
+import { AdminsidenavComponent } from './Admin/adminsidenav/adminsidenav.component';
+import { AdminheaderComponent } from './Admin/adminheader/adminheader.component';
+import { AgentComponent } from './Admin/agent/agent.component';
+import { CustomerComponent } from './Admin/customer/customer.component';
+import { AdmindashboardComponent } from './Admin/admindashboard/admindashboard.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     SidenavComponent,
-    CustomerformComponent
+    CustomerformComponent,
+    CustomerinfoComponent,
+    AdminsidenavComponent,
+    AdminheaderComponent,
+    AgentComponent,
+    CustomerComponent,
+    AdmindashboardComponent,
   ],
   imports: [
     BrowserModule,
