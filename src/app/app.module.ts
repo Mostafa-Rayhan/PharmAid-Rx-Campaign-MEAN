@@ -22,6 +22,7 @@ import { AdminheaderComponent } from './Admin/adminheader/adminheader.component'
 import { AgentComponent } from './Admin/agent/agent.component';
 import { CustomerComponent } from './Admin/customer/customer.component';
 import { AdmindashboardComponent } from './Admin/admindashboard/admindashboard.component';
+import { AgentdashboardComponent } from './agentdashboard/agentdashboard.component';
 
 
 @NgModule({
@@ -36,6 +37,7 @@ import { AdmindashboardComponent } from './Admin/admindashboard/admindashboard.c
     AgentComponent,
     CustomerComponent,
     AdmindashboardComponent,
+    AgentdashboardComponent,
   ],
   imports: [
     BrowserModule,
