@@ -7,11 +7,11 @@ import { UserRole } from '../shared/role.enum';
 @Injectable({
   providedIn: 'root',
 })
-export class AdminAuthGuard implements CanActivate {
+export class AgentAuthGuard implements CanActivate {
   constructor(private authService: AuthService, private router: Router) {}
 
   canActivate(next: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean {
-    if (this.authService.getUserRole() === UserRole.Admin) {
+    if (this.authService.getUserRole() === UserRole.Agent) {
       return true;
     } else {
       this.router.navigate(['/auth/signin']);

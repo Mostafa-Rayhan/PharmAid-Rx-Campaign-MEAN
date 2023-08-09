@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SidenavComponent } from './sidenav/sidenav.component';
+import { SidenavComponent } from './agent/sidenav/sidenav.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
@@ -13,16 +13,18 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
-import { HeaderComponent } from './header/header.component';
-import { CustomerformComponent } from './customerform/customerform.component';
-import { CustomerinfoComponent } from './customerinfo/customerinfo.component';
+import { HeaderComponent } from './agent/header/header.component';
+import { CustomerformComponent } from './agent/customerform/customerform.component';
+import { CustomerinfoComponent } from './agent/customerinfo/customerinfo.component';
 
 import { AdminsidenavComponent } from './Admin/adminsidenav/adminsidenav.component';
 import { AdminheaderComponent } from './Admin/adminheader/adminheader.component';
 import { AgentComponent } from './Admin/agent/agent.component';
 import { CustomerComponent } from './Admin/customer/customer.component';
 import { AdmindashboardComponent } from './Admin/admindashboard/admindashboard.component';
-import { AgentdashboardComponent } from './agentdashboard/agentdashboard.component';
+import { AgentdashboardComponent } from './agent/agentdashboard/agentdashboard.component';
+import { SigninComponent } from './auth/signin/signin.component';
+import { SignupComponent } from './auth/signup/signup.component';
 
 
 @NgModule({
@@ -38,6 +40,8 @@ import { AgentdashboardComponent } from './agentdashboard/agentdashboard.compone
     CustomerComponent,
     AdmindashboardComponent,
     AgentdashboardComponent,
+    SigninComponent,
+    SignupComponent,
   ],
   imports: [
     BrowserModule,
