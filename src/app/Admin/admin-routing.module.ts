@@ -1,18 +1,20 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AdminAuthGuard } from 'auth/admin-auth.guard';
-import { CustomerComponent } from './Admin/customer/customer.component';
-import { AgentComponent } from './Admin/agent/agent.component';
-import { AdminDashboardComponent } from 'Admin/admindashboard/admindashboard.component';
+import { AdminAuthGuard } from '../auth/admin-auth.guard';
+import { AdmindashboardComponent } from '../Admin/admindashboard/admindashboard.component';
+import { AgentComponent } from './agent/agent.component';
+import { CustomerComponent } from './customer/customer.component';
 
 const routes: Routes = [
     {
       path: '',
       canActivate: [AdminAuthGuard],
       children: [
-        { path: 'dashboard', component: AdminDashboardComponent },
-        { path: 'agent', loadChildren: () => import('./agent/agent.module').then(m => m.AgentModule) },
-        { path: 'customer', loadChildren: () => import('./customer/customer.module').then(m => m.CustomerModule) },
+        { path: 'dashboard', component: AdmindashboardComponent },
+        { path: 'agent', component: AgentComponent },
+        { path: 'customer', component: CustomerComponent },
+        // { path: 'agent', loadChildren: () => import('../Admin/agent/agent.module').then(m => m.AgentModule) },
+        // { path: 'customer', loadChildren: () => import('./Admin/customer/customer.module').then(m => m.CustomerModule) },
         { path: '', pathMatch: 'full', redirectTo: 'dashboard' },
       ],
     },

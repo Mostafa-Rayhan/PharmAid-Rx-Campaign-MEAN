@@ -9,6 +9,7 @@ import { UserRole } from '../role.enum';
   providedIn: 'root',
 })
 export class AuthService {
+  [x: string]: any;
   private currentUserSubject: BehaviorSubject<User>;
   public currentUser: Observable<User>;
 

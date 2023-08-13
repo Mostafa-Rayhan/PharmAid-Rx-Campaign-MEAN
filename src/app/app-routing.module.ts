@@ -11,9 +11,9 @@ import { SignUpComponent } from './auth/signup/signup.component';
 
 
 const routes: Routes = [
-  { path: 'agentdashboard', component: AgentdashboardComponent },
-  { path: 'customerform', component: CustomerformComponent },
-  { path: 'customerinfo', component: CustomerinfoComponent },
+  { path: 'agent/agentdashboard', component: AgentdashboardComponent },
+  { path: 'agent/customerform', component: CustomerformComponent },
+  { path: 'agent/customerinfo', component: CustomerinfoComponent },
   { path: 'admin/customer', component: CustomerComponent },
   { path: 'admin/agent', component: AgentComponent },
 

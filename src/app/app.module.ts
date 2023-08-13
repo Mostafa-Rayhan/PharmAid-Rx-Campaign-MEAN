@@ -23,8 +23,8 @@ import { AgentComponent } from './Admin/agent/agent.component';
 import { CustomerComponent } from './Admin/customer/customer.component';
 import { AdmindashboardComponent } from './Admin/admindashboard/admindashboard.component';
 import { AgentdashboardComponent } from './agent/agentdashboard/agentdashboard.component';
-import { SigninComponent } from './auth/signin/signin.component';
-import { SignupComponent } from './auth/signup/signup.component';
+import { SignInComponent } from './auth/signin/signin.component';
+import { SignUpComponent } from './auth/signup/signup.component';
 
 
 @NgModule({
@@ -40,8 +40,8 @@ import { SignupComponent } from './auth/signup/signup.component';
     CustomerComponent,
     AdmindashboardComponent,
     AgentdashboardComponent,
-    SigninComponent,
-    SignupComponent,
+    SignInComponent,
+    SignUpComponent,
   ],
   imports: [
     BrowserModule,

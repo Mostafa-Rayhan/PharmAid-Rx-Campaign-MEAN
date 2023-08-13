@@ -1,8 +1,8 @@
 <mat-drawer-container>
   <mat-drawer mode="side" [opened]="sideBarOpen" class="bg-light">
     <!-- <mat-drawer mode="side" opened="true"> -->
-    <app-sidenav *ngIf="userRole === 'agent'"></app-sidenav>
-    <app-adminsidenav *ngIf="userRole === 'admin'"></app-adminsidenav> 
+    <app-sidenav *ngIf="UserRole === 'agent'"></app-sidenav>
+    <app-adminsidenav *ngIf="UserRole === 'admin'"></app-adminsidenav> 
   </mat-drawer>
   <mat-drawer-content>
     <app-header (toggleSidebarForMe)="sideBarToggler()"></app-header>
