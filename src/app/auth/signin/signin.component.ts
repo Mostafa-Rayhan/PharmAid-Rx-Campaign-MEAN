@@ -1,5 +1,5 @@
 
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthService } from '../shared/services/auth.service';
 
@@ -11,7 +11,8 @@ export class SignInComponent {
   username: string = '';
   password: string = '';
 
-  constructor(private authService: AuthService, private router: Router) {}
+  // constructor(private authService: AuthService, private router: Router) {}
+  constructor(@Inject(AuthService) private authService: AuthService, private router: Router) {}
 
   onSignIn(): void {
     this.authService.login(this.username, this.password).subscribe(
