@@ -1,8 +1,9 @@
 // auth/signup.component.ts
 import { Component, Inject } from '@angular/core';
 import { Router } from '@angular/router';
-import { AuthService } from '../shared/services/auth.service';
-import { UserRole } from '../shared/role.enum';
+import { UserRole } from 'src/app/shared/role.enum';
+import { AuthService } from 'src/app/shared/services/auth.service';
+
 
 @Component({
   selector: 'app-signup',

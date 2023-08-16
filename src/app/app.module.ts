@@ -25,6 +25,7 @@ import { AdmindashboardComponent } from './Admin/admindashboard/admindashboard.c
 import { AgentdashboardComponent } from './agent/agentdashboard/agentdashboard.component';
 import { SignInComponent } from './auth/signin/signin.component';
 import { SignUpComponent } from './auth/signup/signup.component';
+import { AuthService } from './shared/services/auth.service';
 
 
 @NgModule({
@@ -56,7 +57,7 @@ import { SignUpComponent } from './auth/signup/signup.component';
     MatDividerModule,
     MatListModule,
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
